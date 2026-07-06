@@ -27,7 +27,7 @@ try {
 
     $method = $_SERVER['REQUEST_METHOD'];
     $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-    $action = end(array_filter(explode('/', $requestUri)));
+    $uriParts = array_filter(explode('/', $requestUri)); $action = end($uriParts);
 
     switch ($method) {
         case 'POST':

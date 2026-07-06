@@ -55,6 +55,7 @@ class Database {
      * Execute SELECT query with prepared statement
      */
     public function select($query, $params = []) {
+        if (!$this->connection) { return null; }
         try {
             $stmt = $this->connection->prepare($query);
 
@@ -105,6 +106,7 @@ class Database {
      * Execute INSERT query with prepared statement
      */
     public function insert($table, $data) {
+        if (!$this->connection) { return false; }
         try {
             $columns = implode(', ', array_keys($data));
             $placeholders = implode(', ', array_fill(0, count($data), '?'));
@@ -151,6 +153,7 @@ class Database {
      * Execute UPDATE query with prepared statement
      */
     public function update($table, $data, $where, $whereParams = []) {
+        if (!$this->connection) { return false; }
         try {
             $set = [];
             $values = [];
@@ -202,6 +205,7 @@ class Database {
      * Execute DELETE query with prepared statement
      */
     public function delete($table, $where, $params = []) {
+        if (!$this->connection) { return false; }
         try {
             $query = "DELETE FROM $table WHERE $where";
             $stmt = $this->connection->prepare($query);

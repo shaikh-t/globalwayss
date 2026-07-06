@@ -118,18 +118,70 @@
   if (sidebarClose) sidebarClose.addEventListener('click', closeSidebar);
   if (sidebarBackdrop) sidebarBackdrop.addEventListener('click', closeSidebar);
 
-  // Login role redirect
+  // Login functionality
   const loginForm = document.getElementById('loginForm');
   if (loginForm) {
-    loginForm.addEventListener('submit', (e) => {
+    loginForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const role = document.querySelector('input[name="role"]:checked')?.value || 'customer';
-      const paths = {
-        customer: 'customer/index.html',
-        vendor: 'vendor/index.html',
-        admin: 'admin/index.html',
-      };
-      window.location.href = paths[role] || paths.customer;
+
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const errorDiv = document.getElementById('loginError');
+      const submitBtn = loginForm.querySelector('button[type="submit"]');
+
+      // Reset error state
+      if (errorDiv) {
+        errorDiv.classList.add('d-none');
+        errorDiv.textContent = '';
+      }
+
+      // Loading state
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Signing in...';
+      }
+
+      try {
+        const response = await fetch(base + 'admin/api/auth.php/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email, password }),
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+          // Store auth data
+          localStorage.setItem('gw_token', result.data.token);
+          localStorage.setItem('gw_user', JSON.stringify(result.data));
+
+          // Redirect based on backend role
+          const paths = {
+            customer: 'customer/index.html',
+            vendor: 'vendor/index.html',
+            admin: 'admin/index.html',
+          };
+
+          window.location.href = base + (paths[result.data.role] || paths.customer);
+        } else {
+          throw new Error(result.message || 'Invalid credentials');
+        }
+      } catch (err) {
+        console.error('Login error:', err);
+        if (errorDiv) {
+          errorDiv.textContent = err.message || 'An error occurred. Please try again.';
+          errorDiv.classList.remove('d-none');
+        } else {
+          alert(err.message || 'An error occurred. Please try again.');
+        }
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = 'Sign In <i class="bi bi-chevron-right ms-1"></i>';
+        }
+      }
     });
   }
 
