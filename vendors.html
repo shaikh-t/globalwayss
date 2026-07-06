@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-base="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verified Vendors — GlobalWays</title>
+  <meta name="description" content="Browse 500+ verified UAE service vendors with ratings and reviews.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/globalways.css" rel="stylesheet">
+</head>
+<body>
+
+  <div id="site-navbar" data-nav-class="dark-hero"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container-xl">
+        <h1 class="font-serif mb-3" style="font-size:clamp(2.2rem,4vw,3.5rem)">Find Your Perfect Vendor</h1>
+        <p class="text-white-50 mb-4 col-lg-7">Search 500+ verified UAE service providers — filtered by rating, location, language, and specialty.</p>
+        <form class="hero-search d-flex align-items-center shadow-sm flex-wrap flex-md-nowrap gap-2" action="vendors.html" role="search">
+          <i class="bi bi-search text-muted ms-3"></i>
+          <input type="search" class="form-control border-0" placeholder="Search vendors, services, specialties…" aria-label="Search vendors">
+          <select class="form-select border-0 font-mono small" style="max-width:9rem;font-size:0.75rem" aria-label="Filter by city">
+            <option selected>All Cities</option>
+            <option>Dubai</option>
+            <option>Abu Dhabi</option>
+            <option>Sharjah</option>
+            <option>Ajman</option>
+          </select>
+          <button type="submit" class="btn btn-gw-dark m-1">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="py-4 bg-white border-bottom">
+      <div class="container-xl">
+        <div class="d-flex flex-wrap gap-2" role="group" aria-label="Filter by category">
+          <button type="button" class="filter-pill-btn active"><i class="bi bi-grid"></i> All Items</button>
+          <button type="button" class="filter-pill-btn"><i class="bi bi-clipboard-check"></i> PRO Services</button>
+          <button type="button" class="filter-pill-btn"><i class="bi bi-building"></i> Business Setup</button>
+          <button type="button" class="filter-pill-btn"><i class="bi bi-passport"></i> Visa &amp; Immigration</button>
+          <button type="button" class="filter-pill-btn"><i class="bi bi-file-earmark-text"></i> Documentation</button>
+          <button type="button" class="filter-pill-btn"><i class="bi bi-wallet2"></i> Financial</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-warm">
+      <div class="container-xl py-3">
+        <div class="row g-4">
+          <aside class="col-lg-3">
+            <div class="filter-sidebar fade-in">
+              <h3>Filters</h3>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="verifiedOnly" checked>
+                <label class="form-check-label small" for="verifiedOnly">Verified only</label>
+              </div>
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="topRated">
+                <label class="form-check-label small" for="topRated">Top Rated (4.5+)</label>
+              </div>
+              <h3>Min Rating</h3>
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <button type="button" class="filter-pill-btn active" style="padding:0.3rem 0.75rem;font-size:0.75rem">Any</button>
+                <button type="button" class="filter-pill-btn" style="padding:0.3rem 0.75rem;font-size:0.75rem">4.0+</button>
+                <button type="button" class="filter-pill-btn" style="padding:0.3rem 0.75rem;font-size:0.75rem">4.5+</button>
+                <button type="button" class="filter-pill-btn" style="padding:0.3rem 0.75rem;font-size:0.75rem">4.8+</button>
+              </div>
+              <h3>Languages</h3>
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <button type="button" class="filter-pill-btn active" style="padding:0.3rem 0.75rem;font-size:0.75rem">English</button>
+                <button type="button" class="filter-pill-btn" style="padding:0.3rem 0.75rem;font-size:0.75rem">Arabic</button>
+                <button type="button" class="filter-pill-btn" style="padding:0.3rem 0.75rem;font-size:0.75rem">Hindi</button>
+                <button type="button" class="filter-pill-btn" style="padding:0.3rem 0.75rem;font-size:0.75rem">Urdu</button>
+              </div>
+              <h3>Member Since</h3>
+              <select class="form-select form-select-sm">
+                <option selected>Any time</option>
+                <option>2024+</option>
+                <option>2022+</option>
+                <option>2020+</option>
+              </select>
+            </div>
+          </aside>
+
+          <div class="col-lg-9">
+            <div class="row g-3">
+              <div class="col-md-6 fade-in">
+                <article class="vendor-list-card h-100 d-flex flex-column">
+                  <div class="d-flex align-items-start gap-3 mb-3">
+                    <span class="avatar-circle flex-shrink-0" style="background:#1165EF;width:3rem;height:3rem;font-size:0.75rem">GA</span>
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-center gap-2 mb-1">
+                        <h2 class="h6 font-serif mb-0">Gulf Advisors LLC</h2>
+                        <span class="vendor-badge bg-mint text-primary"><i class="bi bi-patch-check-fill"></i> Verified</span>
+                      </div>
+                      <div class="text-warning small"><i class="bi bi-star-fill"></i> 4.9 <span class="text-muted">(128 reviews)</span></div>
+                      <span class="font-mono text-muted d-block mt-1" style="font-size:0.65rem"><i class="bi bi-geo-alt"></i> Dubai, UAE</span>
+                    </div>
+                  </div>
+                  <p class="small text-secondary mb-3">Golden Visa, investor routes &amp; business setup specialists with 12+ years of experience.</p>
+                  <div class="d-flex flex-wrap gap-1 mb-3">
+                    <span class="badge bg-mint text-primary">Golden Visa</span>
+                    <span class="badge bg-mint text-primary">Business Setup</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center border-top pt-3 mt-auto">
+                    <span class="small fw-medium">From AED 5,000</span>
+                    <a href="vendor-profile.html?id=gulf-advisors" class="font-mono small text-primary text-decoration-none">View Profile <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 fade-in">
+                <article class="vendor-list-card h-100 d-flex flex-column">
+                  <div class="d-flex align-items-start gap-3 mb-3">
+                    <span class="avatar-circle flex-shrink-0" style="background:#3F83F4;width:3rem;height:3rem;font-size:0.75rem">EP</span>
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-center gap-2 mb-1">
+                        <h2 class="h6 font-serif mb-0">Emirates PRO Hub</h2>
+                        <span class="vendor-badge bg-mint text-primary"><i class="bi bi-patch-check-fill"></i> Verified</span>
+                      </div>
+                      <div class="text-warning small"><i class="bi bi-star-fill"></i> 4.8 <span class="text-muted">(94 reviews)</span></div>
+                      <span class="font-mono text-muted d-block mt-1" style="font-size:0.65rem"><i class="bi bi-geo-alt"></i> Abu Dhabi, UAE</span>
+                    </div>
+                  </div>
+                  <p class="small text-secondary mb-3">PRO services, attestation &amp; government liaison for corporates and individuals.</p>
+                  <div class="d-flex flex-wrap gap-1 mb-3">
+                    <span class="badge bg-mint text-primary">PRO Services</span>
+                    <span class="badge bg-mint text-primary">Visa</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center border-top pt-3 mt-auto">
+                    <span class="small fw-medium">From AED 1,500</span>
+                    <a href="vendor-profile.html?id=emirates-pro" class="font-mono small text-primary text-decoration-none">View Profile <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 fade-in">
+                <article class="vendor-list-card h-100 d-flex flex-column">
+                  <div class="d-flex align-items-start gap-3 mb-3">
+                    <span class="avatar-circle flex-shrink-0" style="background:#70A5F7;width:3rem;height:3rem;font-size:0.75rem">NV</span>
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-center gap-2 mb-1">
+                        <h2 class="h6 font-serif mb-0">Nexus Visa Services</h2>
+                        <span class="vendor-badge bg-mint text-primary"><i class="bi bi-patch-check-fill"></i> Verified</span>
+                      </div>
+                      <div class="text-warning small"><i class="bi bi-star-fill"></i> 4.7 <span class="text-muted">(76 reviews)</span></div>
+                      <span class="font-mono text-muted d-block mt-1" style="font-size:0.65rem"><i class="bi bi-geo-alt"></i> Sharjah, UAE</span>
+                    </div>
+                  </div>
+                  <p class="small text-secondary mb-3">Family, employment &amp; tourist visa processing with same-day document review.</p>
+                  <div class="d-flex flex-wrap gap-1 mb-3">
+                    <span class="badge bg-mint text-primary">Family Visa</span>
+                    <span class="badge bg-mint text-primary">Employment</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center border-top pt-3 mt-auto">
+                    <span class="small fw-medium">From AED 2,500</span>
+                    <a href="vendor-profile.html?id=nexus-visa" class="font-mono small text-primary text-decoration-none">View Profile <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 fade-in">
+                <article class="vendor-list-card h-100 d-flex flex-column">
+                  <div class="d-flex align-items-start gap-3 mb-3">
+                    <span class="avatar-circle flex-shrink-0" style="background:#0C0C0C;width:3rem;height:3rem;font-size:0.75rem">ZC</span>
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-center gap-2 mb-1">
+                        <h2 class="h6 font-serif mb-0">Zenith Corporate</h2>
+                        <span class="vendor-badge bg-mint text-primary"><i class="bi bi-patch-check-fill"></i> Verified</span>
+                      </div>
+                      <div class="text-warning small"><i class="bi bi-star-fill"></i> 4.9 <span class="text-muted">(52 reviews)</span></div>
+                      <span class="font-mono text-muted d-block mt-1" style="font-size:0.65rem"><i class="bi bi-geo-alt"></i> DIFC, Dubai</span>
+                    </div>
+                  </div>
+                  <p class="small text-secondary mb-3">Free zone &amp; mainland company formation experts for startups and enterprises.</p>
+                  <div class="d-flex flex-wrap gap-1 mb-3">
+                    <span class="badge bg-mint text-primary">Free Zone</span>
+                    <span class="badge bg-mint text-primary">Mainland</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center border-top pt-3 mt-auto">
+                    <span class="small fw-medium">From AED 8,000</span>
+                    <a href="vendor-profile.html?id=zenith-corporate" class="font-mono small text-primary text-decoration-none">View Profile <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section d-flex align-items-center justify-content-center text-center text-white" style="background-image:url('https://images.unsplash.com/photo-1539630417222-d685b659ffcc?w=1400&q=85')">
+      <div class="cta-overlay"></div>
+      <div class="container position-relative py-5 fade-in">
+        <h2 class="font-serif mb-3" style="font-size:clamp(1.8rem,3.5vw,2.8rem)">Are you a UAE service provider?</h2>
+        <p class="text-white-50 mb-4 col-lg-6 mx-auto">Join 500+ verified vendors on GlobalWays. Get qualified leads, escrow payments, and a dedicated dashboard.</p>
+        <a href="vendor-onboard.html" class="btn btn-gw-blue">Apply to Join <i class="bi bi-arrow-right ms-1"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" data-base="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In — GlobalWays</title>
+  <meta name="description" content="Sign in to your GlobalWays customer, vendor, or admin dashboard.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/globalways.css" rel="stylesheet">
+</head>
+<body>
+
+  <div id="site-navbar" data-nav-class="scrolled"></div>
+
+  <main>
+    <!-- Split login -->
+    <div class="container-fluid g-0">
+      <div class="row g-0 auth-split-row">
+        <!-- Left: form -->
+        <div class="col-lg-6 auth-form-panel d-flex align-items-center py-5 px-4 px-lg-5">
+          <div class="w-100 fade-in auth-form-inner">
+            <h1 class="font-serif mb-2" style="font-size:clamp(2rem,4vw,2.75rem)">Welcome back,</h1>
+            <p class="text-secondary mb-4">Sign in to your account to continue.</p>
+
+            <div class="role-tabs w-100 mb-4" role="group" aria-label="Select role">
+              <input type="radio" class="btn-check" name="role" id="roleCustomer" value="customer" checked>
+              <label class="btn flex-fill" for="roleCustomer">Customer</label>
+              <input type="radio" class="btn-check" name="role" id="roleVendor" value="vendor">
+              <label class="btn flex-fill" for="roleVendor">Vendor</label>
+              <input type="radio" class="btn-check" name="role" id="roleAdmin" value="admin">
+              <label class="btn flex-fill" for="roleAdmin">Admin</label>
+            </div>
+
+            <form id="loginForm" novalidate>
+              <div class="mb-3">
+                <label for="email" class="auth-form-label">Email address</label>
+                <input type="email" class="form-control auth-input" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+              <div class="mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <label for="password" class="auth-form-label mb-0">Password</label>
+                  <a href="#" class="small text-secondary text-decoration-none">Forgot password?</a>
+                </div>
+                <div class="input-group auth-input-group">
+                  <input type="password" class="form-control auth-input border-end-0" id="password" name="password" placeholder="••••••••" required>
+                  <button class="btn btn-outline-secondary border-start-0" type="button" id="togglePassword" aria-label="Toggle password visibility">
+                    <i class="bi bi-eye" id="togglePasswordIcon"></i>
+                  </button>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-gw-dark w-100 mb-4 py-3">Sign In <i class="bi bi-chevron-right ms-1"></i></button>
+
+              <div class="auth-divider mb-4"><span>Or continue with</span></div>
+
+              <div class="row g-2 mb-4">
+                <div class="col-6">
+                  <button type="button" class="btn btn-auth-social w-100"><i class="bi bi-google me-2"></i>Google</button>
+                </div>
+                <div class="col-6">
+                  <button type="button" class="btn btn-auth-social w-100"><i class="bi bi-apple me-2"></i>Apple</button>
+                </div>
+              </div>
+
+              <p class="small text-secondary mb-2">Don't have an account? <a href="register.html" class="text-dark fw-medium">Create account</a></p>
+              <p class="small text-secondary mb-0">Are you a vendor? <a href="vendor-onboard.html" class="text-dark fw-medium">Apply here</a></p>
+            </form>
+          </div>
+        </div>
+
+        <!-- Right: blue panel -->
+        <div class="col-lg-6 login-hero-panel d-flex align-items-center py-5 px-4 px-lg-5">
+          <div class="w-100 fade-in auth-panel-inner">
+            <img src="assets/logo-white.png" alt="globalways" class="gw-logo mb-4" style="height:38px">
+            <h2 class="font-serif mb-3" style="font-size:clamp(1.75rem,3vw,2.25rem)">Your UAE journey in one dashboard</h2>
+            <p class="text-white-50 mb-4 pe-lg-3">Track applications, manage documents, and communicate with vendors — all protected by escrow and real-time updates.</p>
+            <ul class="list-unstyled auth-checklist mb-4">
+              <li><span class="auth-check-icon"><i class="bi bi-check-lg"></i></span>All transactions protected by escrow</li>
+              <li><span class="auth-check-icon"><i class="bi bi-check-lg"></i></span>Real-time tracking at every stage</li>
+              <li><span class="auth-check-icon"><i class="bi bi-check-lg"></i></span>Bank-grade document encryption</li>
+            </ul>
+            <div class="auth-customer-badge">
+              <div class="d-flex" style="margin-left:-0.35rem">
+                <span class="avatar-circle border border-2 border-white" style="background:#1165EF;margin-left:-0.35rem;width:2rem;height:2rem;font-size:0.55rem">AH</span>
+                <span class="avatar-circle border border-2 border-white" style="background:#3F83F4;margin-left:-0.35rem;width:2rem;height:2rem;font-size:0.55rem">ST</span>
+                <span class="avatar-circle border border-2 border-white" style="background:#70A5F7;margin-left:-0.35rem;width:2rem;height:2rem;font-size:0.55rem">PS</span>
+              </div>
+              <span>50,000+ happy customers worldwide</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Track Every Step -->
+    <section class="py-5 bg-white">
+      <div class="container-xl py-4">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5 fade-in">
+            <p class="label-mono text-primary mb-3">Live Tracking</p>
+            <h2 class="font-serif mb-4" style="font-size:clamp(1.9rem,3.5vw,2.75rem);line-height:1.1">
+              <span class="text-gradient-blue">Track</span> Every Step<br>Like Your Package
+            </h2>
+            <p class="text-secondary mb-4">FedEx-style tracking gives you complete visibility into your application. No more chasing your agent or wondering what's happening.</p>
+            <ul class="list-unstyled auth-feature-list mb-4">
+              <li><i class="bi bi-check-circle-fill text-primary"></i>Instant WhatsApp &amp; email notifications</li>
+              <li><i class="bi bi-check-circle-fill text-primary"></i>Milestone-by-milestone progress view</li>
+              <li><i class="bi bi-check-circle-fill text-primary"></i>Estimated completion countdown</li>
+              <li><i class="bi bi-check-circle-fill text-primary"></i>Document upload status tracking</li>
+              <li><i class="bi bi-check-circle-fill text-primary"></i>Direct vendor messaging in-platform</li>
+            </ul>
+            <a href="customer/applications.html" class="btn btn-gw-dark">See Demo Dashboard <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+          <div class="col-lg-7 fade-in">
+            <div class="tracking-mockup">
+              <div class="tracking-mockup-chrome">
+                <span class="chrome-dot bg-danger"></span>
+                <span class="chrome-dot bg-warning"></span>
+                <span class="chrome-dot bg-success"></span>
+                <span class="font-mono text-muted flex-grow-1 text-center" style="font-size:0.65rem">app.globalways.ae/track</span>
+              </div>
+              <div class="tracking-mockup-body">
+                <p class="font-mono text-muted mb-1" style="font-size:0.6rem;letter-spacing:0.12em">GOLDEN VISA APPLICATION</p>
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <p class="small fw-medium font-serif mb-0">Ahmed Al-Rashidi · #GV-2026-4821</p>
+                  <span class="badge rounded-pill bg-mint text-primary font-mono" style="font-size:0.6rem">67% Done</span>
+                </div>
+                <div class="progress mb-4 rounded-pill" style="height:6px">
+                  <div class="progress-bar bg-primary rounded-pill" style="width:67%"></div>
+                </div>
+                <div class="tracking-timeline">
+                  <div class="tracking-step done">
+                    <span class="tracking-step-icon"><i class="bi bi-check-lg"></i></span>
+                    <div class="flex-grow-1">
+                      <div class="small fw-medium">Application Submitted</div>
+                      <div class="font-mono text-muted" style="font-size:0.65rem">Jun 1 · 9:00 AM</div>
+                    </div>
+                  </div>
+                  <div class="tracking-step done">
+                    <span class="tracking-step-icon"><i class="bi bi-check-lg"></i></span>
+                    <div class="flex-grow-1">
+                      <div class="small fw-medium">Documents Verified</div>
+                      <div class="font-mono text-muted" style="font-size:0.65rem">Jun 1 · 2:30 PM</div>
+                    </div>
+                  </div>
+                  <div class="tracking-step done">
+                    <span class="tracking-step-icon"><i class="bi bi-check-lg"></i></span>
+                    <div class="flex-grow-1">
+                      <div class="small fw-medium">Government Submission</div>
+                      <div class="font-mono text-muted" style="font-size:0.65rem">Jun 2 · 10:15 AM</div>
+                    </div>
+                  </div>
+                  <div class="tracking-step done">
+                    <span class="tracking-step-icon"><i class="bi bi-check-lg"></i></span>
+                    <div class="flex-grow-1">
+                      <div class="small fw-medium">Biometrics Scheduled</div>
+                      <div class="font-mono text-muted" style="font-size:0.65rem">Jun 3 · 9:00 AM</div>
+                    </div>
+                  </div>
+                  <div class="tracking-step active">
+                    <span class="tracking-step-icon pulse-dot-icon"></span>
+                    <div class="flex-grow-1">
+                      <div class="small fw-medium">Final Approval Pending</div>
+                      <div class="font-mono text-muted" style="font-size:0.65rem">Estimated Jun 5</div>
+                    </div>
+                  </div>
+                  <div class="tracking-step pending">
+                    <span class="tracking-step-icon"></span>
+                    <div class="flex-grow-1">
+                      <div class="small fw-medium text-muted">Visa Stamped &amp; Ready</div>
+                      <div class="font-mono text-muted" style="font-size:0.65rem">—</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('togglePassword')?.addEventListener('click', function () {
+      const p = document.getElementById('password');
+      const i = document.getElementById('togglePasswordIcon');
+      const hidden = p.type === 'password';
+      p.type = hidden ? 'text' : 'password';
+      i.classList.toggle('bi-eye', !hidden);
+      i.classList.toggle('bi-eye-slash', hidden);
+    });
+  </script>
+</body>
+</html>

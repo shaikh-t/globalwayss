@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-base="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Profile — GlobalWays</title>
+  <meta name="description" content="View vendor ratings, services, and reviews on GlobalWays.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/globalways.css" rel="stylesheet">
+</head>
+<body>
+
+  <div id="site-navbar" data-nav-class="scrolled"></div>
+
+  <main style="padding-top:5rem">
+    <section class="py-5 bg-white">
+      <div class="container-xl">
+        <nav aria-label="breadcrumb" class="mb-4">
+          <ol class="breadcrumb small">
+            <li class="breadcrumb-item"><a href="vendors.html">Vendors</a></li>
+            <li class="breadcrumb-item active" aria-current="page" id="vendorName">Gulf Advisors LLC</li>
+          </ol>
+        </nav>
+
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-8 fade-in">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <span class="avatar-circle" id="vendorAvatar" style="background:#1165EF;width:4rem;height:4rem;font-size:1rem">GA</span>
+              <div>
+                <h1 class="font-serif h2 mb-1" id="vendorTitle">Gulf Advisors LLC</h1>
+                <p class="text-secondary small mb-1" id="vendorLocation"><i class="bi bi-geo-alt"></i> Dubai, UAE</p>
+                <div class="text-warning small" id="vendorRating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> 4.9 (128 reviews)</div>
+              </div>
+            </div>
+
+            <p class="text-secondary mb-4" id="vendorBio">Gulf Advisors is a licensed consultancy specializing in Golden Visa, investor residency, and business setup. With over 10 years in the UAE market, they maintain a 98% approval rate and average 5-day turnaround.</p>
+
+            <h2 class="h5 font-serif mb-3">Services Offered</h2>
+            <div class="d-flex flex-wrap gap-2 mb-5" id="vendorServices">
+              <a href="service-detail.html?id=golden-visa" class="badge bg-mint text-primary text-decoration-none">Golden Visa</a>
+              <a href="service-detail.html?id=investor-visa" class="badge bg-mint text-primary text-decoration-none">Investor Visa</a>
+              <a href="service-detail.html?id=business-setup" class="badge bg-mint text-primary text-decoration-none">Business Setup</a>
+            </div>
+
+            <h2 class="h5 font-serif mb-3">Recent Reviews</h2>
+            <div class="d-grid gap-3">
+              <article class="testimonial-card">
+                <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p class="small fst-italic mb-3">"Golden Visa approved in 5 days. Transparent pricing and excellent communication throughout."</p>
+                <div class="d-flex align-items-center gap-2">
+                  <span class="avatar-circle bg-blk">AH</span>
+                  <span class="small font-mono text-muted">Ahmed Al-Rashidi · Jan 2026</span>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p class="small fst-italic mb-3">"Set up my free zone company seamlessly. Escrow payment gave total peace of mind."</p>
+                <div class="d-flex align-items-center gap-2">
+                  <span class="avatar-circle bg-blk">ST</span>
+                  <span class="small font-mono text-muted">Sarah Thompson · Dec 2025</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="col-lg-4 fade-in">
+            <aside class="feature-card bg-warm sticky-top" style="top:6rem">
+              <h2 class="h6 font-serif mb-3">Contact Vendor</h2>
+              <ul class="list-unstyled small text-secondary mb-4">
+                <li class="mb-2"><i class="bi bi-clock text-primary me-2"></i>Avg response: <strong>2 hours</strong></li>
+                <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Success rate: <strong>98%</strong></li>
+                <li class="mb-2"><i class="bi bi-shield-check text-primary me-2"></i>Licensed &amp; verified</li>
+              </ul>
+              <a href="register.html" class="btn btn-gw-blue w-100 mb-2">Request Quote</a>
+              <a href="contact.html" class="btn btn-gw-outline w-100">Message via GlobalWays</a>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      const vendors = {
+        'gulf-advisors': { name: 'Gulf Advisors LLC', initials: 'GA', color: '#1165EF', location: 'Dubai, UAE', rating: '4.9 (128 reviews)', bio: 'Gulf Advisors is a licensed consultancy specializing in Golden Visa, investor residency, and business setup. With over 10 years in the UAE market, they maintain a 98% approval rate and average 5-day turnaround.' },
+        'emirates-pro': { name: 'Emirates PRO Hub', initials: 'EP', color: '#3F83F4', location: 'Abu Dhabi, UAE', rating: '4.8 (94 reviews)', bio: 'Full-service PRO and government liaison firm handling attestation, stamping, and visa coordination across all emirates.' },
+        'nexus-visa': { name: 'Nexus Visa Services', initials: 'NV', color: '#70A5F7', location: 'Sharjah, UAE', rating: '4.7 (76 reviews)', bio: 'Affordable visa processing for families, employees, and tourists with transparent pricing and no hidden fees.' },
+      };
+      const id = new URLSearchParams(window.location.search).get('id') || 'gulf-advisors';
+      const v = vendors[id] || vendors['gulf-advisors'];
+      document.title = v.name + ' — GlobalWays';
+      document.getElementById('vendorName').textContent = v.name;
+      document.getElementById('vendorTitle').textContent = v.name;
+      document.getElementById('vendorAvatar').textContent = v.initials;
+      document.getElementById('vendorAvatar').style.background = v.color;
+      document.getElementById('vendorLocation').innerHTML = '<i class="bi bi-geo-alt"></i> ' + v.location;
+      document.getElementById('vendorRating').innerHTML = '<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> ' + v.rating;
+      document.getElementById('vendorBio').textContent = v.bio;
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-base="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All UAE Services — GlobalWays</title>
+  <meta name="description" content="Browse Golden Visa, business setup, PRO services, and more from verified UAE vendors.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/globalways.css" rel="stylesheet">
+</head>
+<body>
+
+  <div id="site-navbar" data-nav-class="dark-hero"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container-xl">
+        <nav class="breadcrumb-gw" aria-label="Breadcrumb"><a href="index.html">Home</a> / Our Services</nav>
+        <h1 class="font-serif mb-3" style="font-size:clamp(2.2rem,4vw,3.5rem)">All Services</h1>
+        <p class="text-white-50 mb-4 col-lg-7">Browse 50+ UAE services from 500+ verified providers — compare pricing, processing times, and success rates in one place.</p>
+        <form class="hero-search d-flex align-items-center shadow-sm" action="services.html" role="search">
+          <i class="bi bi-search text-muted ms-3"></i>
+          <input type="search" id="serviceSearch" class="form-control" placeholder="Search Golden Visa, Business Setup, PRO…" aria-label="Search services">
+          <button type="submit" class="btn btn-gw-dark m-1">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="py-5 bg-warm">
+      <div class="container-xl py-3">
+        <div class="d-flex flex-wrap gap-2 mb-4" id="categoryFilters" role="group" aria-label="Filter by category">
+          <button type="button" class="filter-pill-btn filter-pill active" data-filter="all"><i class="bi bi-grid"></i> All Services</button>
+          <button type="button" class="filter-pill-btn filter-pill" data-filter="visa"><i class="bi bi-passport"></i> Visa Services</button>
+          <button type="button" class="filter-pill-btn filter-pill" data-filter="business"><i class="bi bi-building"></i> Business Setup</button>
+          <button type="button" class="filter-pill-btn filter-pill" data-filter="documentation"><i class="bi bi-file-earmark-text"></i> Documentation</button>
+          <button type="button" class="filter-pill-btn filter-pill" data-filter="financial"><i class="bi bi-wallet2"></i> Financial</button>
+        </div>
+
+        <div class="row g-3" id="servicesGrid">
+          <div class="col-sm-6 col-lg-4 service-item fade-in" data-category="visa" data-name="golden visa">
+            <a href="service-detail.html?id=golden-visa" class="svc-list-card">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="service-icon mb-0"><i class="bi bi-award"></i></div>
+                <span class="vendor-badge bg-blk text-white">Popular</span>
+              </div>
+              <h2 class="h6 font-serif mb-2">Golden Visa</h2>
+              <p class="small text-secondary mb-3">10-year residency for investors, entrepreneurs &amp; exceptional talent</p>
+              <div class="svc-meta-row"><span class="text-muted">Starting from</span><span class="fw-medium">AED 5,000</span></div>
+              <div class="svc-meta-row"><span class="text-muted">Processing</span><span>5–7 days</span></div>
+              <div class="svc-meta-row"><span class="text-muted">Success Rate</span><span class="fw-medium">98%</span></div>
+              <div class="svc-success-bar mb-3"><span style="width:98%"></span></div>
+              <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                <span class="small text-muted">18 vendors</span>
+                <span class="small text-warning"><i class="bi bi-star-fill"></i> 4.9</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 service-item fade-in" data-category="visa" data-name="investor visa">
+            <a href="service-detail.html?id=investor-visa" class="svc-list-card">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="service-icon mb-0"><i class="bi bi-graph-up-arrow"></i></div>
+              </div>
+              <h2 class="h6 font-serif mb-2">Investor Visa</h2>
+              <p class="small text-secondary mb-3">Residency through property investment or business ownership</p>
+              <div class="svc-meta-row"><span class="text-muted">Starting from</span><span class="fw-medium">AED 6,500</span></div>
+              <div class="svc-meta-row"><span class="text-muted">Processing</span><span>7–10 days</span></div>
+              <div class="svc-meta-row"><span class="text-muted">Success Rate</span><span class="fw-medium">96%</span></div>
+              <div class="svc-success-bar mb-3"><span style="width:96%"></span></div>
+              <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                <span class="small text-muted">14 vendors</span>
+                <span class="small text-warning"><i class="bi bi-star-fill"></i> 4.8</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 service-item fade-in" data-category="visa" data-name="family visa">
+            <a href="service-detail.html?id=family-visa" class="svc-list-card">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="service-icon mb-0"><i class="bi bi-heart"></i></div>
+                <span class="vendor-badge bg-blk text-white">Popular</span>
+              </div>
+              <h2 class="h6 font-serif mb-2">Family Visa</h2>
+              <p class="small text-secondary mb-3">Sponsor your spouse, children &amp; dependents in the UAE</p>
+              <div class="svc-meta-row"><span class="text-muted">Starting from</span><span class="fw-medium">AED 3,000</span></div>
+              <div class="svc-meta-row"><span class="text-muted">Processing</span><span>5–7 days</span></div>
+              <div class="svc-meta-row"><span class="text-muted">Success Rate</span><span class="fw-medium">97%</span></div>
+              <div class="svc-success-bar mb-3"><span style="width:97%"></span></div>
+              <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                <span class="small text-muted">22 vendors</span>
+                <span class="small text-warning"><i class="bi bi-star-fill"></i> 4.8</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 service-item fade-in" data-category="visa" data-name="employment visa">
+            <a href="service-detail.html?id=employment-visa" class="svc-list-card">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="service-icon mb-0"><i class="bi bi-person-badge"></i></div>
+              </div>
+              <h2 class="h6 font-serif mb-2">Employment Visa</h2>
+              <p class="small text-secondary mb-3">Work permits for all nationalities, sectors &amp; company types</p>
+              <div class="svc-meta-row"><span class="text-muted">Starting from</span><span class="fw-medium">AED 2,500</span></div>
+              <div class="svc-meta-row"><span class="text-muted">Processing</span><span>4–6 days</span></div>
+              <div class="svc-meta-row"><span class="text-muted">Success Rate</span><span class="fw-medium">99%</span></div>
+              <div class="svc-success-bar mb-3"><span style="width:99%"></span></div>
+              <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                <span class="small text-muted">31 vendors</span>
+                <span class="small text-warning"><i class="bi bi-star-fill"></i> 4.7</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 service-item fade-in" data-category="business" data-name="business setup">
+            <a href="service-detail.html?id=business-setup" class="svc-list-card">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="service-icon mb-0"><i class="bi bi-building"></i></div>
+              </div>
+              <h2 class="h6 font-serif mb-2">Business Setup</h2>
+              <p class="small text-secondary mb-3">Full company formation, trade license &amp; bank account opening</p>
+              <div class="svc-meta-row"><span class="text-muted">Starting from</span><span class="fw-medium">AED 8,000</span></div>
+              <div class="svc-meta-row"><span class="text-muted">Processing</span><span>3–5 days</span></div>
+              <div class="svc-meta-row"><span class="text-muted">Success Rate</span><span class="fw-medium">95%</span></div>
+              <div class="svc-success-bar mb-3"><span style="width:95%"></span></div>
+              <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                <span class="small text-muted">26 vendors</span>
+                <span class="small text-warning"><i class="bi bi-star-fill"></i> 4.9</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 service-item fade-in" data-category="financial" data-name="emirates id">
+            <a href="service-detail.html?id=emirates-id" class="svc-list-card">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="service-icon mb-0"><i class="bi bi-credit-card"></i></div>
+              </div>
+              <h2 class="h6 font-serif mb-2">Emirates ID</h2>
+              <p class="small text-secondary mb-3">National ID application, biometrics &amp; renewal services</p>
+              <div class="svc-meta-row"><span class="text-muted">Starting from</span><span class="fw-medium">AED 500</span></div>
+              <div class="svc-meta-row"><span class="text-muted">Processing</span><span>2–3 days</span></div>
+              <div class="svc-meta-row"><span class="text-muted">Success Rate</span><span class="fw-medium">99%</span></div>
+              <div class="svc-success-bar mb-3"><span style="width:99%"></span></div>
+              <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                <span class="small text-muted">19 vendors</span>
+                <span class="small text-warning"><i class="bi bi-star-fill"></i> 4.8</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section d-flex align-items-center justify-content-center text-center text-white" style="background-image:url('https://images.unsplash.com/photo-1539630417222-d685b659ffcc?w=1400&q=85')">
+      <div class="cta-overlay"></div>
+      <div class="container position-relative py-5 fade-in">
+        <h2 class="font-serif mb-3" style="font-size:clamp(1.8rem,3.5vw,2.8rem)">Can't find what you need?</h2>
+        <p class="text-white-50 mb-4 col-lg-6 mx-auto">Browse our full vendor directory or reach out — our team will match you with the right provider within 24 hours.</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="vendors.html" class="btn btn-gw-blue">Browse Vendors <i class="bi bi-arrow-right ms-1"></i></a>
+          <a href="contact.html" class="btn btn-gw-outline text-white border-white">Contact Support</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      const pills = document.querySelectorAll('.filter-pill');
+      const items = document.querySelectorAll('.service-item');
+      const search = document.getElementById('serviceSearch');
+
+      pills.forEach((pill) => {
+        pill.addEventListener('click', () => {
+          pills.forEach((p) => {
+            p.classList.remove('btn-gw-dark', 'active');
+            p.classList.add('btn-outline-secondary');
+          });
+          pill.classList.remove('btn-outline-secondary');
+          pill.classList.add('btn-gw-dark', 'active');
+          const filter = pill.dataset.filter;
+          items.forEach((item) => {
+            const match = filter === 'all' || item.dataset.category === filter;
+            item.classList.toggle('d-none', !match);
+          });
+        });
+      });
+
+      if (search) {
+        search.addEventListener('input', () => {
+          const q = search.value.toLowerCase().trim();
+          items.forEach((item) => {
+            const name = item.dataset.name || '';
+            item.classList.toggle('d-none', q && !name.includes(q));
+          });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

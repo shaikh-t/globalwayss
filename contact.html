@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-base="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — GlobalWays</title>
+  <meta name="description" content="Get in touch with GlobalWays for UAE service inquiries and support.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/globalways.css" rel="stylesheet">
+</head>
+<body>
+
+  <div id="site-navbar" data-nav-class="dark-hero"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container-xl">
+        <p class="label-mono label-mono-light">Contact</p>
+        <h1 class="font-serif mb-3" style="font-size:clamp(2.2rem,4vw,3.5rem)">Get in Touch</h1>
+        <p class="text-white-50 col-lg-7">Have a question about visas, business setup, or our platform? Our team responds within 2 hours on business days.</p>
+      </div>
+    </section>
+
+    <section class="py-5 bg-warm">
+      <div class="container-xl py-3">
+        <div class="row g-5">
+          <div class="col-lg-7 fade-in">
+            <h2 class="h5 font-serif mb-4">Send us a message</h2>
+            <form class="feature-card">
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="contactName" class="form-label small fw-medium">Full name</label>
+                  <input type="text" class="form-control" id="contactName" required>
+                </div>
+                <div class="col-sm-6">
+                  <label for="contactEmail" class="form-label small fw-medium">Email</label>
+                  <input type="email" class="form-control" id="contactEmail" required>
+                </div>
+                <div class="col-12">
+                  <label for="contactSubject" class="form-label small fw-medium">Subject</label>
+                  <select class="form-select" id="contactSubject">
+                    <option>General inquiry</option>
+                    <option>Golden Visa</option>
+                    <option>Business setup</option>
+                    <option>Vendor partnership</option>
+                    <option>Technical support</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="contactMessage" class="form-label small fw-medium">Message</label>
+                  <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-gw-blue">Send Message <i class="bi bi-send ms-1"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-5 fade-in">
+            <h2 class="h5 font-serif mb-4">Office Information</h2>
+            <address class="feature-card mb-4 not-italic">
+              <p class="label-mono mb-2">Headquarters</p>
+              <p class="small text-secondary mb-0">GlobalWays Advisory<br>Dubai International Financial Centre<br>Level 6, Gate Avenue<br>Dubai, UAE 000001</p>
+            </address>
+            <ul class="list-unstyled d-grid gap-3">
+              <li class="d-flex gap-3">
+                <span class="stat-tile-icon flex-shrink-0"><i class="bi bi-envelope"></i></span>
+                <div>
+                  <p class="label-mono mb-1">Email</p>
+                  <a href="mailto:hello@globalways.ae" class="small text-decoration-none">hello@globalways.ae</a>
+                </div>
+              </li>
+              <li class="d-flex gap-3">
+                <span class="stat-tile-icon flex-shrink-0"><i class="bi bi-telephone"></i></span>
+                <div>
+                  <p class="label-mono mb-1">Phone</p>
+                  <a href="tel:+97144000000" class="small text-decoration-none">+971 4 400 0000</a>
+                </div>
+              </li>
+              <li class="d-flex gap-3">
+                <span class="stat-tile-icon flex-shrink-0"><i class="bi bi-clock"></i></span>
+                <div>
+                  <p class="label-mono mb-1">Hours</p>
+                  <p class="small text-secondary mb-0">Sun–Thu, 9:00 AM – 6:00 PM GST</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
