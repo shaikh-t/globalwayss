@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages — GlobalWays Customer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../css/globalways.css" rel="stylesheet">
+</head>
+<body class="bg-warm">
+  <div class="dashboard-wrapper d-flex">
+    <aside class="dashboard-sidebar d-flex flex-column">
+      <div class="p-3 border-bottom border-secondary border-opacity-25 d-flex align-items-center justify-content-between">
+        <a href="../index.html" class="text-decoration-none d-flex align-items-center gap-2">
+          <div class="rounded-2 d-flex align-items-center justify-content-center" style="width:32px;height:32px;background:linear-gradient(135deg,#1165EF,#3F83F4)"><i class="bi bi-globe2 text-white small"></i></div>
+          <div><div class="text-white font-serif small">GlobalWays</div><div class="font-mono text-uppercase" style="font-size:9px;letter-spacing:.15em;color:rgba(255,255,255,.4)">Customer Portal</div></div>
+        </a>
+        <button class="btn btn-link text-white-50 p-0 d-lg-none" data-sidebar-close><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="p-3 border-bottom border-secondary border-opacity-25">
+        <div class="d-flex align-items-center gap-2 p-2 rounded-3" style="background:rgba(255,255,255,.05)">
+          <span class="avatar-circle bg-dark border border-secondary">AH</span>
+          <div class="min-w-0"><div class="text-white small fw-semibold text-truncate">Ahmed Hassan</div><div class="font-mono text-truncate" style="font-size:10px;color:rgba(255,255,255,.4)">ahmed@example.com</div></div>
+        </div>
+      </div>
+      <nav class="nav flex-column p-3 gap-1 flex-grow-1">
+        <div class="font-mono text-uppercase px-2 mb-2" style="font-size:9px;letter-spacing:.15em;color:rgba(255,255,255,.25)">Menu</div>
+        <a class="nav-link" href="index.html"><i class="bi bi-grid-1x2"></i> Dashboard</a>
+        <a class="nav-link" href="applications.html"><i class="bi bi-file-earmark-text"></i> Applications</a>
+        <a class="nav-link" href="documents.html"><i class="bi bi-folder2-open"></i> Documents</a>
+        <a class="nav-link active" href="messages.html"><i class="bi bi-chat-dots"></i> Messages <span class="badge rounded-pill">3</span></a>
+        <a class="nav-link" href="payments.html"><i class="bi bi-credit-card"></i> Payments</a>
+        <a class="nav-link" href="profile.html"><i class="bi bi-person"></i> Profile</a>
+      </nav>
+      <div class="p-3 border-top border-secondary border-opacity-25"><a class="nav-link" href="../index.html"><i class="bi bi-box-arrow-left"></i> Back to Home</a></div>
+    </aside>
+    <div class="sidebar-backdrop"></div>
+    <div class="dashboard-main">
+      <header class="dashboard-topbar d-flex align-items-center justify-content-between gap-3">
+        <div class="d-flex align-items-center gap-3 flex-grow-1">
+          <button class="btn btn-light d-lg-none" data-sidebar-toggle><i class="bi bi-list"></i></button>
+        </div>
+        <div class="d-flex align-items-center gap-2"><button class="btn btn-light"><i class="bi bi-bell"></i></button><span class="avatar-circle bg-dark">AH</span></div>
+      </header>
+      <main class="p-4 p-lg-5">
+        <div class="mb-4"><h1 class="font-serif h2 mb-1">Messages</h1><p class="text-muted mb-0">Communicate with your service providers</p></div>
+        <div class="card border-0 shadow-sm overflow-hidden" style="min-height:520px">
+          <div class="row g-0 h-100">
+            <div class="col-md-4 border-end">
+              <div class="p-3 border-bottom"><input type="search" class="form-control form-control-sm bg-warm" placeholder="Search conversations…"></div>
+              <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action chat-thread active py-3">
+                  <div class="d-flex justify-content-between"><strong class="small">Emirates Pro Services</strong><span class="text-muted" style="font-size:11px">2h ago</span></div>
+                  <div class="text-muted" style="font-size:11px">Golden Visa</div>
+                  <div class="small text-truncate">Your medical test has been scheduled</div>
+                  <span class="badge bg-primary rounded-pill mt-1">2</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action chat-thread py-3">
+                  <div class="d-flex justify-content-between"><strong class="small">FastTrack Visa Services</strong><span class="text-muted" style="font-size:11px">1d ago</span></div>
+                  <div class="text-muted" style="font-size:11px">Family Visa</div>
+                  <div class="small text-truncate">Please upload the passport copy</div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action chat-thread py-3">
+                  <div class="d-flex justify-content-between"><strong class="small">UAE Docs Hub Support</strong><span class="text-muted" style="font-size:11px">3d ago</span></div>
+                  <div class="text-muted" style="font-size:11px">General Support</div>
+                  <div class="small text-truncate">How can we help you today?</div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-8 d-flex flex-column">
+              <div class="p-3 border-bottom d-flex align-items-center gap-2">
+                <span class="avatar-circle bg-primary">EP</span>
+                <div><div class="fw-semibold small">Emirates Pro Services</div><div class="text-success small"><i class="bi bi-circle-fill" style="font-size:8px"></i> Online</div></div>
+              </div>
+              <div class="flex-grow-1 p-3 overflow-auto bg-warm" style="min-height:340px">
+                <div class="mb-3"><div class="bg-white rounded-3 p-2 px-3 d-inline-block small shadow-sm" style="max-width:80%">Hello! Thank you for choosing Emirates Pro Services.</div><div class="text-muted" style="font-size:10px">Jun 7, 10:00 AM</div></div>
+                <div class="mb-3 text-end"><div class="bg-primary text-white rounded-3 p-2 px-3 d-inline-block small" style="max-width:80%">Hi, I wanted to check the status of my Golden Visa application.</div><div class="text-muted" style="font-size:10px">Jun 7, 10:05 AM</div></div>
+                <div class="mb-3"><div class="bg-white rounded-3 p-2 px-3 d-inline-block small shadow-sm" style="max-width:80%">Your application is progressing well. We have successfully submitted it to the authorities.</div><div class="text-muted" style="font-size:10px">Jun 7, 10:07 AM</div></div>
+                <div class="mb-3"><div class="bg-white rounded-3 p-2 px-3 d-inline-block small shadow-sm" style="max-width:80%">The next step is the medical test. Appointment on June 10th at 9:00 AM at Dubai Healthcare City.</div><div class="text-muted" style="font-size:10px">Jun 7, 10:08 AM</div></div>
+                <div class="mb-3 text-end"><div class="bg-primary text-white rounded-3 p-2 px-3 d-inline-block small" style="max-width:80%">Perfect! What documents should I bring?</div><div class="text-muted" style="font-size:10px">Jun 7, 10:10 AM</div></div>
+                <div class="mb-3"><div class="bg-white rounded-3 p-2 px-3 d-inline-block small shadow-sm" style="max-width:80%">Please bring your passport, application receipt, and the medical form we sent you.</div><div class="text-muted" style="font-size:10px">Jun 8, 6:00 AM</div></div>
+              </div>
+              <div class="p-3 border-top">
+                <div class="input-group">
+                  <button class="btn btn-light"><i class="bi bi-paperclip"></i></button>
+                  <input type="text" class="form-control" placeholder="Type your message…">
+                  <button class="btn btn-primary"><i class="bi bi-send"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

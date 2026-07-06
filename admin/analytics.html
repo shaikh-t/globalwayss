@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics — GlobalWays Admin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../css/globalways.css" rel="stylesheet">
+</head>
+<body class="bg-warm">
+  <div class="dashboard-wrapper d-flex">
+    <aside class="dashboard-sidebar d-flex flex-column">
+      <div class="p-3 border-bottom border-secondary border-opacity-25 d-flex align-items-center justify-content-between">
+        <a href="../index.html" class="text-decoration-none d-flex align-items-center gap-2">
+          <div class="rounded-2 d-flex align-items-center justify-content-center" style="width:32px;height:32px;background:linear-gradient(135deg,#DC2626,#991B1B)"><i class="bi bi-shield-check text-white small"></i></div>
+          <div><div class="text-white font-serif small">Admin Portal</div><div class="font-mono text-uppercase" style="font-size:9px;letter-spacing:.15em;color:rgba(255,255,255,.4)">Platform Control</div></div>
+        </a>
+        <button class="btn btn-link text-white-50 p-0 d-lg-none" data-sidebar-close><i class="bi bi-x-lg"></i></button>
+      </div>
+      <nav class="nav flex-column p-3 gap-1 flex-grow-1">
+        <a class="nav-link" href="index.html"><i class="bi bi-grid-1x2"></i> Dashboard</a>
+        <a class="nav-link" href="vendors.html"><i class="bi bi-shield-check"></i> Vendor Verification</a>
+        <a class="nav-link" href="disputes.html"><i class="bi bi-exclamation-triangle"></i> Dispute Center <span class="badge rounded-pill bg-danger">3</span></a>
+        <a class="nav-link" href="transactions.html"><i class="bi bi-currency-dollar"></i> Transactions</a>
+        <a class="nav-link active" href="analytics.html"><i class="bi bi-bar-chart-line"></i> Analytics</a>
+      </nav>
+      <div class="p-3 border-top border-secondary border-opacity-25"><a class="nav-link" href="../index.html"><i class="bi bi-box-arrow-left"></i> Back to Home</a></div>
+    </aside>
+    <div class="sidebar-backdrop"></div>
+    <div class="dashboard-main">
+      <header class="dashboard-topbar d-flex align-items-center justify-content-between gap-3">
+        <div class="d-flex align-items-center gap-3"><button class="btn btn-light d-lg-none" data-sidebar-toggle><i class="bi bi-list"></i></button></div>
+        <div class="d-flex align-items-center gap-2">
+          <select class="form-select form-select-sm" style="width:auto"><option>Last 30 days</option><option>Last 90 days</option><option>This year</option></select>
+          <span class="avatar-circle" style="background:linear-gradient(135deg,#DC2626,#991B1B)">SA</span>
+        </div>
+      </header>
+      <main class="p-4 p-lg-5">
+        <div class="mb-4"><h1 class="font-serif h2 mb-1">Platform Analytics</h1><p class="text-muted mb-0">Revenue, growth, and performance insights</p></div>
+        <div class="row g-3 mb-4">
+          <div class="col-sm-6 col-xl-3"><div class="stat-tile"><div class="d-flex justify-content-between mb-2"><span class="small text-muted">Revenue Growth</span><span class="badge bg-success-subtle text-success">+18%</span></div><div class="font-serif h4 mb-0">+18.4%</div></div></div>
+          <div class="col-sm-6 col-xl-3"><div class="stat-tile"><div class="d-flex justify-content-between mb-2"><span class="small text-muted">New Customers</span><span class="badge bg-success-subtle text-success">+12%</span></div><div class="font-serif h4 mb-0">342</div></div></div>
+          <div class="col-sm-6 col-xl-3"><div class="stat-tile"><div class="d-flex justify-content-between mb-2"><span class="small text-muted">Conversion Rate</span><span class="badge bg-success-subtle text-success">+3%</span></div><div class="font-serif h4 mb-0">24.6%</div></div></div>
+          <div class="col-sm-6 col-xl-3"><div class="stat-tile"><div class="d-flex justify-content-between mb-2"><span class="small text-muted">Avg. Order Value</span><span class="badge bg-success-subtle text-success">+7%</span></div><div class="font-serif h4 mb-0">AED 3,280</div></div></div>
+        </div>
+        <div class="row g-4 mb-4">
+          <div class="col-lg-8">
+            <div class="card border-0 shadow-sm">
+              <div class="card-header bg-white border-bottom"><h2 class="h6 mb-0">Revenue Over Time</h2></div>
+              <div class="card-body"><div class="chart-placeholder"><i class="bi bi-bar-chart-line fs-3 me-2"></i> Revenue chart placeholder</div></div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-header bg-white border-bottom"><h2 class="h6 mb-0">Top Services</h2></div>
+              <div class="card-body">
+                <div class="mb-3"><div class="d-flex justify-content-between small mb-1"><span>Golden Visa</span><strong>38%</strong></div><div class="progress" style="height:6px"><div class="progress-bar" style="width:38%"></div></div></div>
+                <div class="mb-3"><div class="d-flex justify-content-between small mb-1"><span>Family Visa</span><strong>24%</strong></div><div class="progress" style="height:6px"><div class="progress-bar bg-info" style="width:24%"></div></div></div>
+                <div class="mb-3"><div class="d-flex justify-content-between small mb-1"><span>Business Setup</span><strong>18%</strong></div><div class="progress" style="height:6px"><div class="progress-bar bg-warning" style="width:18%"></div></div></div>
+                <div><div class="d-flex justify-content-between small mb-1"><span>Emirates ID</span><strong>12%</strong></div><div class="progress" style="height:6px"><div class="progress-bar bg-success" style="width:12%"></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm">
+              <div class="card-header bg-white border-bottom"><h2 class="h6 mb-0">Customer Acquisition</h2></div>
+              <div class="card-body"><div class="chart-placeholder" style="min-height:180px"><i class="bi bi-graph-up me-2"></i> Acquisition funnel placeholder</div></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm">
+              <div class="card-header bg-white border-bottom"><h2 class="h6 mb-0">Vendor Performance</h2></div>
+              <div class="card-body"><div class="chart-placeholder" style="min-height:180px"><i class="bi bi-pie-chart me-2"></i> Vendor distribution placeholder</div></div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
