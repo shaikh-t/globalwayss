@@ -23,14 +23,7 @@
             <h1 class="font-serif mb-2" style="font-size:clamp(2rem,4vw,2.75rem)">Welcome back,</h1>
             <p class="text-secondary mb-4">Sign in to your account to continue.</p>
 
-            <div class="role-tabs w-100 mb-4" role="group" aria-label="Select role">
-              <input type="radio" class="btn-check" name="role" id="roleCustomer" value="customer" checked>
-              <label class="btn flex-fill" for="roleCustomer">Customer</label>
-              <input type="radio" class="btn-check" name="role" id="roleVendor" value="vendor">
-              <label class="btn flex-fill" for="roleVendor">Vendor</label>
-              <input type="radio" class="btn-check" name="role" id="roleAdmin" value="admin">
-              <label class="btn flex-fill" for="roleAdmin">Admin</label>
-            </div>
+            <div id="loginError" class="alert alert-danger d-none mb-4" role="alert"></div>
 
             <form id="loginForm" novalidate>
               <div class="mb-3">
